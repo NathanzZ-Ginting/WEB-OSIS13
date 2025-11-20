@@ -4,6 +4,7 @@ import { articlesAPI, Article } from '../lib/supabase';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { Calendar, Clock, ArrowLeft, User } from 'lucide-react';
+import 'react-quill/dist/quill.snow.css';
 
 export function ArticleDetail() {
   const { id } = useParams<{ id: string }>();
@@ -151,7 +152,7 @@ export function ArticleDetail() {
               <div className="prose prose-lg prose-slate max-w-none">
                 <div className="bg-white rounded-3xl shadow-lg p-8 md:p-12">
                   <div 
-                    className="text-slate-700 leading-relaxed ql-editor"
+                    className="ql-editor prose-sm sm:prose-base text-slate-700 leading-relaxed"
                     dangerouslySetInnerHTML={{ __html: article.content }}
                   />
                 </div>
