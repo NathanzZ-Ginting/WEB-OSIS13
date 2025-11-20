@@ -9,7 +9,7 @@ export function Hero() {
       <div className="relative container mx-auto px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium mb-8 hover:bg-orange-200 transition-colors duration-300">
-            ✨ Selamat Datang
+            Selamat Datang
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight tracking-tight">
             HALO, SMANTISZEN!
