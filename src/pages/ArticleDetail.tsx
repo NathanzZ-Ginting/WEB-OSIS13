@@ -150,9 +150,10 @@ export function ArticleDetail() {
               {/* Article Content */}
               <div className="prose prose-lg prose-slate max-w-none">
                 <div className="bg-white rounded-3xl shadow-lg p-8 md:p-12">
-                  <div className="text-slate-700 leading-relaxed whitespace-pre-wrap">
-                    {article.content}
-                  </div>
+                  <div 
+                    className="text-slate-700 leading-relaxed ql-editor"
+                    dangerouslySetInnerHTML={{ __html: article.content }}
+                  />
                 </div>
               </div>
 

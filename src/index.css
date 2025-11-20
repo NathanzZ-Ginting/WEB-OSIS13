@@ -65,3 +65,74 @@
 .hero-gradient {
   background: linear-gradient(to right, rgba(24, 24, 65, 0.8), rgba(63, 63, 191, 0.7));
 }
+
+/* Quill Editor Styles */
+@layer components {
+  .ql-toolbar {
+    @apply border-b border-slate-200 rounded-t-lg bg-slate-50;
+  }
+
+  .ql-toolbar button,
+  .ql-toolbar button:hover,
+  .ql-toolbar button.ql-active,
+  .ql-toolbar.ql-snow button:hover,
+  .ql-toolbar.ql-snow button.ql-active,
+  .ql-toolbar.ql-snow button.ql-active.ql-selected {
+    @apply text-slate-700;
+  }
+
+  .ql-toolbar button:hover,
+  .ql-toolbar button.ql-active {
+    @apply bg-orange-100;
+  }
+
+  .ql-toolbar button {
+    @apply w-8 h-8 sm:w-10 sm:h-10;
+  }
+
+  .ql-container {
+    @apply font-sans text-slate-700 rounded-b-lg;
+    font-size: 14px;
+  }
+
+  @media (min-width: 640px) {
+    .ql-container {
+      font-size: 16px;
+    }
+  }
+
+  .ql-editor {
+    @apply p-3 sm:p-4;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .ql-editor.ql-blank::before {
+    @apply text-slate-400;
+    font-style: normal;
+  }
+
+  .ql-editor h1 {
+    @apply text-lg sm:text-2xl font-bold mb-2;
+  }
+
+  .ql-editor h2 {
+    @apply text-base sm:text-xl font-semibold mb-2;
+  }
+
+  .ql-editor h3 {
+    @apply text-sm sm:text-lg font-semibold mb-2;
+  }
+
+  .ql-editor p {
+    @apply mb-3 sm:mb-4;
+  }
+
+  .ql-editor ul,
+  .ql-editor ol {
+    @apply ml-4 sm:ml-6 mb-3 sm:mb-4;
+  }
+
+  .ql-editor blockquote {
+    @apply border-l-4 border-orange-600 pl-3 sm:pl-4 py-2 my-3 sm:my-4 italic text-slate-600 text-sm sm:text-base;
+  }
+}

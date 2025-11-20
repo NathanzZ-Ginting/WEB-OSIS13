@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export function Hero() {
   return (
@@ -22,13 +23,13 @@ export function Hero() {
             siswa SMAN 13 Depok
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-slate-800 text-white hover:bg-slate-700 font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group hover:scale-105">
+            <Link
+              to="/about"
+              className="bg-slate-800 text-white hover:bg-slate-700 font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 group hover:scale-105"
+            >
               Tentang Kami
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform duration-300" />
-            </button>
-            <button className="bg-transparent border-2 border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105">
-              Program Kerja
-            </button>
+            </Link>
           </div>
         </div>
       </div>
